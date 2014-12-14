@@ -1,0 +1,8 @@
+slc|Salt Lake City|Description
+den|Denver|Description
+salt lake|slc|AKA
+salt lake city|slc|AKA
+denver|den|AKA 
+las|Las Vegas|Description
+vegas|las|AKA
+las vegas|las|AKA

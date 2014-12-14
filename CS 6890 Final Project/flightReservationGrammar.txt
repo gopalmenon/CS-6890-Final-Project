@@ -1,0 +1,376 @@
+<S>
+S
+</S>
+<V>
+S
+CHOOSE
+CITIES
+CITYPART
+CTY
+CTYP
+DATEP
+DAY
+DAYOFWEEK
+DET
+EVNT
+EVNTP
+EVNTVP
+EVP
+MONTH
+PREP
+PRO
+REQMNT
+REQP
+RVP
+SPECIFIC
+TRAVEL
+VERB
+VP
+WHEN
+</V>
+<T>
+a
+an
+appointment
+appointments
+april
+august
+city
+consultation
+consultations
+december
+denver
+den
+event
+events
+february
+friday
+fly
+from
+go
+have
+i
+in
+interview
+interviews
+january
+july
+june
+lake
+las
+march
+may
+me
+meeting
+meetings
+monday
+need
+near
+next
+november
+october
+on
+one
+salt
+saturday
+september
+slc
+sunday
+that
+the
+these
+this
+thursday
+to
+travel
+tuesday
+vegas
+want
+wedding
+weddings
+wednesday
+weekend
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+1st
+2nd
+3rd
+4th
+5th
+6th
+7th
+8th
+9th
+10th
+11th
+12th
+13th
+14th
+15th
+16th
+17th
+18th
+19th
+20th
+21st
+22nd
+23rd
+24th
+25th
+26th
+27th
+28th
+29th
+30th
+31st
+first
+second
+third
+fourth
+fifth
+sixth
+seventh
+eighth
+ninth
+tenth
+eleventh
+twelfth
+thirteenth
+fourteenth
+fifteenth
+sixteenth
+seventeenth
+eighteenth
+nineteenth
+twentieth
+twenty-first
+twenty-second
+twenty-third
+twenty-fourth
+twenty-fifth
+twenty-sixth
+twenty-seventh
+twenty-eighth
+twenty-ninth
+thirtieth
+thirty-first
+</T>
+<P>
+S ::= REQMNT TRAVEL
+S ::= WHEN
+S ::= CTYP
+S ::= CHOOSE
+CHOOSE ::= DAY SPECIFIC
+CHOOSE ::= DET DAY SPECIFIC
+TRAVEL ::= CITIES WHEN
+TRAVEL ::= CITIES
+CITIES ::= CTYP CTYP
+CITIES ::= CTYP
+CTYP ::= PREP CTY
+CTYP ::= CTY
+CTY ::= CITYPART CITYPART CITYPART
+CTY ::= CITYPART CITYPART
+CTY ::= CITYPART
+REQMNT ::= REQP 
+REQMNT ::= EVNTP
+REQP ::= PRO RVP
+REQP ::= RVP
+RVP ::= VP VP
+RVP ::= VP
+VP ::= VERB PREP
+EVP ::= VERB DET
+EVNTP ::= PRO EVNTVP
+EVNTP ::= EVNTVP
+EVNTVP ::= EVP EVNT
+WHEN ::= DET DATEP
+WHEN ::= PREP DATEP
+WHEN ::= PREP DET DATEP
+WHEN ::= DATEP
+DATEP ::= DAYOFWEEK
+DATEP ::= MONTH DAY
+DATEP ::= DAY
+CITYPART ::= city
+CITYPART ::= denver
+CITYPART ::= den
+CITYPART ::= lake
+CITYPART ::= salt
+CITYPART ::= slc
+CITYPART ::= las
+CITYPART ::= vegas
+CITYPART ::= las
+DAY ::= 1
+DAY ::= 2
+DAY ::= 3
+DAY ::= 4
+DAY ::= 5
+DAY ::= 6
+DAY ::= 7
+DAY ::= 8
+DAY ::= 9
+DAY ::= 10
+DAY ::= 11
+DAY ::= 12
+DAY ::= 13
+DAY ::= 14
+DAY ::= 15
+DAY ::= 16
+DAY ::= 17
+DAY ::= 18
+DAY ::= 19
+DAY ::= 20
+DAY ::= 21
+DAY ::= 22
+DAY ::= 23
+DAY ::= 24
+DAY ::= 25
+DAY ::= 26
+DAY ::= 27
+DAY ::= 28
+DAY ::= 29
+DAY ::= 30
+DAY ::= 31
+DAY ::= 1st
+DAY ::= 2nd
+DAY ::= 3rd
+DAY ::= 4th
+DAY ::= 5th
+DAY ::= 6th
+DAY ::= 7th
+DAY ::= 8th
+DAY ::= 9th
+DAY ::= 10th
+DAY ::= 11th
+DAY ::= 12th
+DAY ::= 13th
+DAY ::= 14th
+DAY ::= 15th
+DAY ::= 16th
+DAY ::= 17th
+DAY ::= 18th
+DAY ::= 19th
+DAY ::= 20th
+DAY ::= 21st
+DAY ::= 22nd
+DAY ::= 23rd
+DAY ::= 24th
+DAY ::= 25th
+DAY ::= 26th
+DAY ::= 27th
+DAY ::= 28th
+DAY ::= 29th
+DAY ::= 30th
+DAY ::= 31st
+DAY ::= first
+DAY ::= second
+DAY ::= third
+DAY ::= fourth
+DAY ::= fifth
+DAY ::= sixth
+DAY ::= seventh
+DAY ::= eighth
+DAY ::= ninth
+DAY ::= tenth
+DAY ::= eleventh
+DAY ::= twelfth
+DAY ::= thirteenth
+DAY ::= fourteenth
+DAY ::= fifteenth
+DAY ::= sixteenth
+DAY ::= seventeenth
+DAY ::= eighteenth
+DAY ::= nineteenth
+DAY ::= twentieth
+DAY ::= twenty-first
+DAY ::= twenty-second
+DAY ::= twenty-third
+DAY ::= twenty-fourth
+DAY ::= twenty-fifth
+DAY ::= twenty-sixth
+DAY ::= twenty-seventh
+DAY ::= twenty-eighth
+DAY ::= twenty-ninth
+DAY ::= thirtieth
+DAY ::= thirty-first
+DAYOFWEEK ::= monday
+DAYOFWEEK ::= tuesday
+DAYOFWEEK ::= wednesday
+DAYOFWEEK ::= thursday
+DAYOFWEEK ::= friday
+DAYOFWEEK ::= saturday
+DAYOFWEEK ::= sunday
+DAYOFWEEK ::= weekend
+DET ::= the
+DET ::= a
+DET ::= an
+DET ::= this
+DET ::= these
+DET ::= that
+DET ::= next
+EVNT ::= meeting
+EVNT ::= appointment
+EVNT ::= consultation
+EVNT ::= event
+EVNT ::= wedding
+EVNT ::= interview
+EVNT ::= meetings
+EVNT ::= appointments
+EVNT ::= consultations
+EVNT ::= events
+EVNT ::= weddings
+EVNT ::= interviews
+MONTH ::= january
+MONTH ::= february
+MONTH ::= march
+MONTH ::= april
+MONTH ::= may
+MONTH ::= june
+MONTH ::= july
+MONTH ::= august
+MONTH ::= september
+MONTH ::= october
+MONTH ::= november
+MONTH ::= december
+PREP ::= from
+PREP ::= to
+PREP ::= on
+PREP ::= near
+PREP ::= in
+PRO ::= i
+PRO ::= me
+SPECIFIC ::= one
+VERB ::= go
+VERB ::= need
+VERB ::= want
+VERB ::= have
+VERB ::= fly
+VERB ::= travel
+</P>
